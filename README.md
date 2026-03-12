@@ -26,15 +26,16 @@ This series covers the following regulatory and policy frameworks:
 
 | Framework | Jurisdiction | Status |
 |---|---|---|
-| CSRD | European Union | [Published Paper](https://github.com/Green-Software-Foundation/sci-policy-and-legislation-alignment-white-paper-series/blob/main/Leveraging%20the%20SCI%20Standard%20for%20CSRD%20Compliance.md) |
+| CSRD | European Union | [Published Paper](https://github.com/Green-Software-Foundation/sci-policy-and-legislation-alignment-white-paper-series/blob/main/whitepapers/Leveraging%20the%20SCI%20Standard%20for%20CSRD%20Compliance.md) |
 | EU AI Act | European Union | In progress |
 | Corporate Sustainability Due Diligence Directive (CSDDD) | European Union | Under investigation |
 | EU Green Claims Directive | European Union | Under investigation |
 | Unfair Commercial Practices Directive | European Union | Under investigation |
 | Energy Efficiency Directive | European Union | Under investigation |
-| California SB253 & SB261 | United States (California) | Under investigation |
+| California SB253 & SB261 | United States (California) |In Progress |
 | ISSB Standards | Global | Under investigation |
 | SCI for Circularity | Cross-cutting | In progress |
+| Cloud Region Metadata and CADA|European Commission| In Progress|
 
 ---
 
