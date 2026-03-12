@@ -32,9 +32,10 @@ This series covers the following regulatory and policy frameworks:
 | EU Green Claims Directive | European Union | Under investigation |
 | Unfair Commercial Practices Directive | European Union | Under investigation |
 | Energy Efficiency Directive | European Union | Under investigation |
-| California SB253 & SB261 | United States (California) | Under investigation |
+| California SB253 & SB261 | United States (California) |In Progress |
 | ISSB Standards | Global | Under investigation |
 | SCI for Circularity | Cross-cutting | In progress |
+|Cloud and AI Development Act (CADA / CAIDA)|European Commission| Under Investigation|
 
 ---
 
