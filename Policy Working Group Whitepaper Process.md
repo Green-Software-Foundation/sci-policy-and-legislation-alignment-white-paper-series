@@ -1,4 +1,4 @@
-# Policy Working Group Whitepaper Process
+# Working Group Whitepaper Process
 
 ## A Guide to Topic Selection, Drafting, Review, and Publication
 
