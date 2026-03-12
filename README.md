@@ -27,6 +27,7 @@ This series covers the following regulatory and policy frameworks:
 | Framework | Jurisdiction | Status |
 |---|---|---|
 | CSRD | European Union | [Published Paper](https://github.com/Green-Software-Foundation/sci-policy-and-legislation-alignment-white-paper-series/blob/main/whitepapers/Leveraging%20the%20SCI%20Standard%20for%20CSRD%20Compliance.md) |
+| SCI for AI and EU AI Act Environmental Compliance | European Union | [Published Paper](https://github.com/Green-Software-Foundation/sci-policy-and-legislation-alignment-white-paper-series/blob/main/whitepapers/Software%20Carbon%20Intensity%20for%20AI%20and%20EU%20AI%20Act%20Environmental%20Compliance.md) |
 | EU AI Act | European Union | In progress |
 | Corporate Sustainability Due Diligence Directive (CSDDD) | European Union | Under investigation |
 | EU Green Claims Directive | European Union | Under investigation |
