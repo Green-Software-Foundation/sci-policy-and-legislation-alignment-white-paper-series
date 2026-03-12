@@ -35,7 +35,7 @@ This series covers the following regulatory and policy frameworks:
 | California SB253 & SB261 | United States (California) |In Progress |
 | ISSB Standards | Global | Under investigation |
 | SCI for Circularity | Cross-cutting | In progress |
-|Cloud and AI Development Act (CADA / CAIDA)|European Commission| Under Investigation|
+| Cloud Region Metadata and CADA|European Commission| In Progress|
 
 ---
 
