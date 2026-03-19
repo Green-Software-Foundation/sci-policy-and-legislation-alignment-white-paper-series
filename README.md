@@ -38,6 +38,7 @@ This series covers the following regulatory and policy frameworks:
 | ISSB Standards | Global | Under investigation |
 | SCI for Circularity | Cross-cutting | In progress |
 | Cloud Region Metadata and CADA|European Commission| In Progress|
+| Data Centres as Flexible Grid Participants - Response to OFGEM|European Commission| [Published](https://github.com/Green-Software-Foundation/sci-policy-and-legislation-alignment-white-paper-series/blob/main/whitepapers/Data%20Centers%20as%20Flexible%20Grid%20Participants%20-%20Response%20to%20OFGEM%20Call%20for%20Input.md)|
 
 ---
 
