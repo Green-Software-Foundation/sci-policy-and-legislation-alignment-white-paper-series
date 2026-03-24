@@ -51,7 +51,6 @@ The CSRD, adopted in November 2022 and entering force in stages from 2024-2028, 
 | **Wave 2 Start Date** | FY 2025 (Report 2026\) | **FY 2027 (Report 2028\)** |
 | **ESRS E1 Data Points** | \~1,100 Total Data Points | **Reduced by 61%** (Simplified metrics) |
 | **Assurance Level** | Mandatory Step-up to Reasonable | **Limited Assurance** (No mandatory step-up) |
-| **Digital Format** | iXBRL / XHTML | **Mandatory iXBRL** via ESEF |
 | **Listed SMEs** | Mandatory (Wave 3\) | **Removed from mandatory scope** (Voluntary) |
 | **Value Chain Reporting** | Exhaustive Audit | **"Value Chain Cap"** (Estimates encouraged) |
 
@@ -417,15 +416,17 @@ This foundational alignment ensures that SCI-based calculations maintain integri
 
 **ESRS E1 Requirement (paragraph 45):** "The undertaking shall calculate its Scope 1, Scope 2 and Scope 3 emissions in accordance with the Greenhouse Gas Protocol."
 
-**SCI Alignment:** SCI is designed to complement, not replace, the GHG Protocol. The SCI specification can provide granular methodology for software while maintaining compatibility with GHG Protocol corporate inventory requirements.
+The GHG Protocol uses an attributional approach: allocating a share of actual emissions to the reporting organisation using average emission factors. SCI's specification also requires average location-based carbon intensity for the I term, making its output compatible with attributional accounting. However, SCI's design philosophy — elimination-only, sensitive to action — is consequential in spirit: it is built to drive operational decisions, not to allocate shares of global emissions.
+
+This distinction matters in practice. Some carbon-aware scheduling tools use marginal emission factors to guide real-time decisions. If marginal intensity data feeds SCI calculations that are then aggregated into a GHG inventory, this mixes a consequential metric into an attributional framework \- something auditors could rightly challenge. SCI calculations feeding CSRD disclosures must use average location-based emission factors. Marginal data remains valuable for operational decisions but should not enter the reporting pipeline. Similarly, ESRS E1-6 requires Scope 2 reported using both location-based and market-based methods. SCI provides only location-based figures. Organisations must therefore maintain a separate market-based calculation alongside SCI-derived figures. SCI cannot be the sole source for Scope 2 disclosure because of the explicit rejection of market based emissions.
 
 **Integration Workflow:**
 
-1. Calculate component-level SCI scores  
-2. Aggregate SCI calculations to determine software-related emissions  
-3. Classify these emissions into GHG Protocol Scopes 1, 2, 3  
-4. Incorporate into corporate GHG inventory  
-5. Report totals under ESRS E1-6
+1. Calculate component-level SCI scores using average location-based grid carbon intensity                                                                                                                         
+2. Aggregate to absolute emissions (tCO2e) and classify into GHG Protocol Scopes  
+3. For Scope 2: supplement with a separate market-based calculation                                                                                                                                                
+4. Report both location-based and market-based Scope 2 totals under ESRS E1-6  
+5. Document methodology, confirming average (not marginal) emission factors were used
 
 ### 4.5 Addressing Scope 3 Complexity
 
@@ -435,28 +436,11 @@ For software companies, Scope 3 presents unique challenges:
 
 #### Challenge 1: Category 1 (Purchased Goods and Services)
 
-- Cloud computing services (AWS, Azure, GCP)  
-- SaaS platforms and third-party APIs  
-- Hardware procurement for on-premise infrastructure
-
-**How SCI Can Help:** SCI provides a framework for engaging cloud providers and software vendors on emissions data. Organizations can request SCI scores from suppliers or calculate estimates based on documented SCI methodology, creating consistency and comparability.
+When reporting cloud service emissions, the organisation reports its supplier's Scope 1/2 as its own Scope 3. Where the cloud provider and customer use different emission factors, figures won't reconcile. A plausible best-practice could be to use provider-reported emission factors where available (AWS, Azure, and GCP all publish customer carbon footprint tools); use SCI-based estimates to fill gaps.
 
 #### Challenge 2: Category 11 (Use of Sold Products)
 
-- Customer usage of software products  
-- Highly variable based on customer behavior  
-- Often lacks direct measurement  
-- Especially challenging for B2C software where end-user behavior is outside organizational control
-
-**How SCI Can Help:** By defining appropriate functional units (e.g., per user session, per transaction), organizations can model typical usage patterns and calculate representative SCI scores.
-
-**Important Limitations**: Category 11 reporting remains challenging even with SCI:
-
-- Representative scenarios may not capture full variability of actual usage  
-- For B2C applications, measuring actual customer energy consumption is often impractical  
-- Modeled estimates introduce significant uncertainty  
-- CSRD requires actual value chain emissions where possible, with clear documentation of estimation methodologies  
-- Organizations should provide ranges or scenarios in disclosures to reflect uncertainty
+The hardest case. The organisation estimates emissions in someone else's infrastructure, often with no visibility into grid location or energy source. SCI provides a structured methodology (define functional unit, model typical usage, apply representative emission factors), but results are modelled estimates with significant uncertainty. Organisations should use conservative assumptions, provide ranges rather than point estimates, and clearly state the proportion of modelled vs measured data.
 
 #### Challenge 3: Data Availability and Quality
 
@@ -532,8 +516,8 @@ Organizations can consider integrating SCI into their CSRD implementation roadma
 
 **SCI Calculation**
 
-- Select representative functional units for key applications  
-- Calculate baseline SCI scores using available data  
+- Select representative functional units for key applications, which may require defining a two-tier functional unit strategy to bridge component-level measurement and corporate reporting.  
+- Calculate baseline SCI scores using available data, at the component level for actionable insight and the infrastructure level for reporting.  
 - Document methodology, assumptions, and data sources  
 - Create calculation models for Scope 3 estimation  
 - **Clearly document** where modeled data is used vs. measured data
@@ -649,6 +633,11 @@ Organizations can leverage various tools to support SCI implementation:
 - Data integration and automation capabilities  
 - Audit trail and evidence management  
 - Scalability and total cost of ownership
+
+Functional Unit Composability: 
+
+When evaluating tools, consider whether they support hierarchical functional units — calculating SCI at the infrastructure primitive level (per instance-hour, per GB-month) and composing these into application-level and portfolio-level totals. This is essential for bridging SCI's component-level granularity with CSRD's requirement for corporate-level absolute emissions. Cloud cost management platforms (FinOps tools) are a natural fit here, as they already track resource consumption at the instance level and can be extended with emission factors.
+
 
 ### 5.4 Overcoming Common Challenges
 
