@@ -1,4 +1,4 @@
-# SCI Policy & Legislation Alignment White Paper Series
+# Policy & Legislation White Paper Series
 
 > A Green Software Foundation initiative mapping the [Software Carbon Intensity (SCI) Specification](https://sci-spec.org) to global sustainability legislation and policy frameworks.
 
