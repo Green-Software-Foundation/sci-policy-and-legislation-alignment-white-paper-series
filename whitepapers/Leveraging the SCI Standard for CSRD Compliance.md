@@ -44,16 +44,15 @@ For organizations that develop, deploy, or procure software, a critical challeng
 
 The CSRD, adopted in November 2022 and entering force in stages from 2024-2028, fundamentally transforms corporate sustainability disclosure in the European Union. Building on the Non-Financial Reporting Directive (NFRD), CSRD introduces:
 
-| Feature | Original Detail (2022 Basis) | 2026 Validated Reality (Post-Omnibus) |
-| :---- | :---- | :---- |
-| **Number of Companies** | \~50,000 | **\~10,000** (Reduced by approx. 80%) |
-| **In-Scope Thresholds** | \>250 Employees / €50m Turnover | **\>1,000 Employees / \>€450m Turnover** |
-| **Wave 2 Start Date** | FY 2025 (Report 2026\) | **FY 2027 (Report 2028\)** |
-| **ESRS E1 Data Points** | \~1,100 Total Data Points | **Reduced by 61%** (Simplified metrics) |
-| **Assurance Level** | Mandatory Step-up to Reasonable | **Limited Assurance** (No mandatory step-up) |
-| **Digital Format** | iXBRL / XHTML | **Mandatory iXBRL** via ESEF |
-| **Listed SMEs** | Mandatory (Wave 3\) | **Removed from mandatory scope** (Voluntary) |
-| **Value Chain Reporting** | Exhaustive Audit | **"Value Chain Cap"** (Estimates encouraged) |
+| Feature                   | Original Detail (2022 Basis)    | 2026 Validated Reality (Post-Omnibus)        |
+| :------------------------ | :------------------------------ | :------------------------------------------- |
+| **Number of Companies**   | \~50,000                        | **\~10,000** (Reduced by approx. 80%)        |
+| **In-Scope Thresholds**   | \>250 Employees / €50m Turnover | **\>1,000 Employees / \>€450m Turnover**     |
+| **Wave 2 Start Date**     | FY 2025 (Report 2026\)          | **FY 2027 (Report 2028\)**                   |
+| **ESRS E1 Data Points**   | \~1,100 Total Data Points       | **Reduced by 61%** (Simplified metrics)      |
+| **Assurance Level**       | Mandatory Step-up to Reasonable | **Limited Assurance** (No mandatory step-up) |
+| **Listed SMEs**           | Mandatory (Wave 3\)             | **Removed from mandatory scope** (Voluntary) |
+| **Value Chain Reporting** | Exhaustive Audit                | **"Value Chain Cap"** (Estimates encouraged) |
 
 ### 1.2 ESRS E1: Climate Change Reporting Requirements
 
@@ -94,13 +93,13 @@ Despite the simplifications, EFRAG has reaffirmed that certain elements remain m
 * **Adoption:** The European Commission is expected to formally adopt these amended standards by **mid/late 2026**.  
 * **Application:** They will be applicable from **Financial Year 2027**, with an option for companies to apply them early starting in **Financial Year 2026**.
 
-| ESRS E1 Requirement | Focus Area | Data Challenge for IT/Software |
-| :---- | :---- | :---- |
-| **E1-1** | Transition Plan | Demonstrating technical levers for emission reduction in code/architecture |
-| **E1-4** | Targets | Setting meaningful goals for software efficiency rather than just absolute totals |
-| **E1-5** | Energy Consumption | Disaggregating software-driven energy use from general building facilities |
-| **E1-6** | GHG Emissions | Accounting for the complex, shared nature of cloud and value-chain emissions |
-| **E1-9** | Financial Effects | Quantifying how future carbon pricing affects the operational cost of software |
+| ESRS E1 Requirement | Focus Area         | Data Challenge for IT/Software                                                    |
+| :------------------ | :----------------- | :-------------------------------------------------------------------------------- |
+| **E1-1**            | Transition Plan    | Demonstrating technical levers for emission reduction in code/architecture        |
+| **E1-4**            | Targets            | Setting meaningful goals for software efficiency rather than just absolute totals |
+| **E1-5**            | Energy Consumption | Disaggregating software-driven energy use from general building facilities        |
+| **E1-6**            | GHG Emissions      | Accounting for the complex, shared nature of cloud and value-chain emissions      |
+| **E1-9**            | Financial Effects  | Quantifying how future carbon pricing affects the operational cost of software    |
 
 ### *Note: While these core requirements (E1-1 through E1-9) remain in effect, the 2025 Omnibus I updates have simplified the specific metrics required under each, prioritizing 'gross' reporting and financial control boundaries over previous, more complex additive approaches.*
 
@@ -314,15 +313,15 @@ For organizations with significant AI workloads, SCI for AI provides much-needed
 
 SCI and CSRD/ESRS E1 operate at different levels but can be highly complementary:
 
-| Aspect | GHG Protocol / ESRS E1 | Software Carbon Intensity |
-| :---- | :---- | :---- |
-| **Level** | Corporate-wide | Software component |
-| **Metric Type** | Absolute total (tCO2e) | Intensity rate (gCO2e/R) |
-| **Primary Use** | External reporting & compliance | Internal optimization & tracking |
-| **Granularity** | Scope 1, 2, 3 categories | Individual software components |
-| **Offset Treatment** | Disclosed separately | Excluded from score |
-| **Target Audience** | Investors, regulators, auditors | Developers, architects, product teams |
-| **Regulatory Status** | Required by CSRD | Complementary, not mandated |
+| Aspect                | GHG Protocol / ESRS E1          | Software Carbon Intensity             |
+| :-------------------- | :------------------------------ | :------------------------------------ |
+| **Level**             | Corporate-wide                  | Software component                    |
+| **Metric Type**       | Absolute total (tCO2e)          | Intensity rate (gCO2e/R)              |
+| **Primary Use**       | External reporting & compliance | Internal optimization & tracking      |
+| **Granularity**       | Scope 1, 2, 3 categories        | Individual software components        |
+| **Offset Treatment**  | Disclosed separately            | Excluded from score                   |
+| **Target Audience**   | Investors, regulators, auditors | Developers, architects, product teams |
+| **Regulatory Status** | Required by CSRD                | Complementary, not mandated           |
 
 **Integration Model:**
 
@@ -417,15 +416,17 @@ This foundational alignment ensures that SCI-based calculations maintain integri
 
 **ESRS E1 Requirement (paragraph 45):** "The undertaking shall calculate its Scope 1, Scope 2 and Scope 3 emissions in accordance with the Greenhouse Gas Protocol."
 
-**SCI Alignment:** SCI is designed to complement, not replace, the GHG Protocol. The SCI specification can provide granular methodology for software while maintaining compatibility with GHG Protocol corporate inventory requirements.
+The GHG Protocol uses an attributional approach: allocating a share of actual emissions to the reporting organisation using average emission factors. SCI's specification also requires average location-based carbon intensity for the I term, making its output compatible with attributional accounting. However, SCI's design philosophy — elimination-only, sensitive to action — is consequential in spirit: it is built to drive operational decisions, not to allocate shares of global emissions.
+
+This distinction matters in practice. Some carbon-aware scheduling tools use marginal emission factors to guide real-time decisions. If marginal intensity data feeds SCI calculations that are then aggregated into a GHG inventory, this mixes a consequential metric into an attributional framework \- something auditors could rightly challenge. SCI calculations feeding CSRD disclosures must use average location-based emission factors. Marginal data remains valuable for operational decisions but should not enter the reporting pipeline. Similarly, ESRS E1-6 requires Scope 2 reported using both location-based and market-based methods. SCI provides only location-based figures. Organisations must therefore maintain a separate market-based calculation alongside SCI-derived figures. SCI cannot be the sole source for Scope 2 disclosure because of the explicit rejection of market based emissions.
 
 **Integration Workflow:**
 
-1. Calculate component-level SCI scores  
-2. Aggregate SCI calculations to determine software-related emissions  
-3. Classify these emissions into GHG Protocol Scopes 1, 2, 3  
-4. Incorporate into corporate GHG inventory  
-5. Report totals under ESRS E1-6
+1. Calculate component-level SCI scores using average location-based grid carbon intensity                                                                                                                         
+2. Aggregate to absolute emissions (tCO2e) and classify into GHG Protocol Scopes  
+3. For Scope 2: supplement with a separate market-based calculation                                                                                                                                                
+4. Report both location-based and market-based Scope 2 totals under ESRS E1-6  
+5. Document methodology, confirming average (not marginal) emission factors were used
 
 ### 4.5 Addressing Scope 3 Complexity
 
@@ -435,28 +436,11 @@ For software companies, Scope 3 presents unique challenges:
 
 #### Challenge 1: Category 1 (Purchased Goods and Services)
 
-- Cloud computing services (AWS, Azure, GCP)  
-- SaaS platforms and third-party APIs  
-- Hardware procurement for on-premise infrastructure
-
-**How SCI Can Help:** SCI provides a framework for engaging cloud providers and software vendors on emissions data. Organizations can request SCI scores from suppliers or calculate estimates based on documented SCI methodology, creating consistency and comparability.
+When reporting cloud service emissions, the organisation reports its supplier's Scope 1/2 as its own Scope 3. Where the cloud provider and customer use different emission factors, figures won't reconcile. A plausible best-practice could be to use provider-reported emission factors where available (AWS, Azure, and GCP all publish customer carbon footprint tools); use SCI-based estimates to fill gaps.
 
 #### Challenge 2: Category 11 (Use of Sold Products)
 
-- Customer usage of software products  
-- Highly variable based on customer behavior  
-- Often lacks direct measurement  
-- Especially challenging for B2C software where end-user behavior is outside organizational control
-
-**How SCI Can Help:** By defining appropriate functional units (e.g., per user session, per transaction), organizations can model typical usage patterns and calculate representative SCI scores.
-
-**Important Limitations**: Category 11 reporting remains challenging even with SCI:
-
-- Representative scenarios may not capture full variability of actual usage  
-- For B2C applications, measuring actual customer energy consumption is often impractical  
-- Modeled estimates introduce significant uncertainty  
-- CSRD requires actual value chain emissions where possible, with clear documentation of estimation methodologies  
-- Organizations should provide ranges or scenarios in disclosures to reflect uncertainty
+The hardest case. The organisation estimates emissions in someone else's infrastructure, often with no visibility into grid location or energy source. SCI provides a structured methodology (define functional unit, model typical usage, apply representative emission factors), but results are modelled estimates with significant uncertainty. Organisations should use conservative assumptions, provide ranges rather than point estimates, and clearly state the proportion of modelled vs measured data.
 
 #### Challenge 3: Data Availability and Quality
 
@@ -532,8 +516,8 @@ Organizations can consider integrating SCI into their CSRD implementation roadma
 
 **SCI Calculation**
 
-- Select representative functional units for key applications  
-- Calculate baseline SCI scores using available data  
+- Select representative functional units for key applications, which may require defining a two-tier functional unit strategy to bridge component-level measurement and corporate reporting.  
+- Calculate baseline SCI scores using available data, at the component level for actionable insight and the infrastructure level for reporting.  
 - Document methodology, assumptions, and data sources  
 - Create calculation models for Scope 3 estimation  
 - **Clearly document** where modeled data is used vs. measured data
@@ -604,15 +588,15 @@ Organizations can consider integrating SCI into their CSRD implementation roadma
 
 Successful SCI implementation requires cross-functional collaboration. Consider establishing a **"GreenOps"** task force and leveraging existing FinOps teams:
 
-| Role | SCI Responsibilities | CSRD Alignment |
-| :---- | :---- | :---- |
-| **Sustainability Team** | Overall methodology ownership; GHG inventory integration; external reporting | Primary CSRD disclosure owners |
-| **Engineering/DevOps** | Component-level SCI calculation; monitoring and telemetry; optimization implementation | Technical data providers |
-| **Product Management** | Functional unit selection; feature impact assessment; roadmap prioritization | Business context for materiality |
-| **Finance** | Cost-benefit analysis; carbon ROI modeling; investment allocation | Financial materiality assessment |
-| **Procurement** | Supplier engagement; cloud contract negotiations; embodied emissions data | Scope 3 data gathering |
-| **Internal Audit** | Control design; documentation review; assurance preparation | Assurance coordination |
-| **Legal/Compliance** | Regulatory interpretation; disclosure review; risk assessment | CSRD compliance oversight |
+| Role                    | SCI Responsibilities                                                                   | CSRD Alignment                   |
+| :---------------------- | :------------------------------------------------------------------------------------- | :------------------------------- |
+| **Sustainability Team** | Overall methodology ownership; GHG inventory integration; external reporting           | Primary CSRD disclosure owners   |
+| **Engineering/DevOps**  | Component-level SCI calculation; monitoring and telemetry; optimization implementation | Technical data providers         |
+| **Product Management**  | Functional unit selection; feature impact assessment; roadmap prioritization           | Business context for materiality |
+| **Finance**             | Cost-benefit analysis; carbon ROI modeling; investment allocation                      | Financial materiality assessment |
+| **Procurement**         | Supplier engagement; cloud contract negotiations; embodied emissions data              | Scope 3 data gathering           |
+| **Internal Audit**      | Control design; documentation review; assurance preparation                            | Assurance coordination           |
+| **Legal/Compliance**    | Regulatory interpretation; disclosure review; risk assessment                          | CSRD compliance oversight        |
 
 ### 5.3 Tool and Technology Considerations
 
@@ -649,6 +633,11 @@ Organizations can leverage various tools to support SCI implementation:
 - Data integration and automation capabilities  
 - Audit trail and evidence management  
 - Scalability and total cost of ownership
+
+Functional Unit Composability: 
+
+When evaluating tools, consider whether they support hierarchical functional units — calculating SCI at the infrastructure primitive level (per instance-hour, per GB-month) and composing these into application-level and portfolio-level totals. This is essential for bridging SCI's component-level granularity with CSRD's requirement for corporate-level absolute emissions. Cloud cost management platforms (FinOps tools) are a natural fit here, as they already track resource consumption at the instance level and can be extended with emission factors.
+
 
 ### 5.4 Overcoming Common Challenges
 
@@ -804,21 +793,21 @@ Organizations can develop a business case across multiple value dimensions. The 
 
 #### Direct Cost Savings (Indicative)
 
-| Source | Annual Value (indicative) | Notes |
-| :---- | :---- | :---- |
-| Cloud cost reduction | €100k \- €1M+ | Scale dependent; assumes 10-30% efficiency gains achievable |
-| On-premise energy costs | €50k \- €500k | Data center PUE and efficiency improvements |
-| Hardware lifecycle extension | €25k \- €250k | Reduced replacement frequency through better utilization |
-| **Total Direct Savings** | **€175k \- €1.75M+** | Varies significantly by organization scale and starting efficiency |
+| Source                       | Annual Value (indicative) | Notes                                                              |
+| :--------------------------- | :------------------------ | :----------------------------------------------------------------- |
+| Cloud cost reduction         | €100k \- €1M+             | Scale dependent; assumes 10-30% efficiency gains achievable        |
+| On-premise energy costs      | €50k \- €500k             | Data center PUE and efficiency improvements                        |
+| Hardware lifecycle extension | €25k \- €250k             | Reduced replacement frequency through better utilization           |
+| **Total Direct Savings**     | **€175k \- €1.75M+**      | Varies significantly by organization scale and starting efficiency |
 
 #### Risk Mitigation Value (Indicative)
 
-| Risk | Annual Value (indicative) | Notes |
-| :---- | :---- | :---- |
-| CSRD compliance confidence | €50k \- €250k | Avoided consultant fees, potentially reduced assurance costs |
-| Carbon pricing hedge | €10k \- €100k+ | Anticipating potential EU carbon border adjustments or carbon taxes |
-| Customer requirement fulfillment | €100k \- €1M+ | Revenue preservation through supplier qualification; highly variable |
-| **Total Risk Value** | **€160k \- €1.35M+** | Primarily option value and downside protection |
+| Risk                             | Annual Value (indicative) | Notes                                                                |
+| :------------------------------- | :------------------------ | :------------------------------------------------------------------- |
+| CSRD compliance confidence       | €50k \- €250k             | Avoided consultant fees, potentially reduced assurance costs         |
+| Carbon pricing hedge             | €10k \- €100k+            | Anticipating potential EU carbon border adjustments or carbon taxes  |
+| Customer requirement fulfillment | €100k \- €1M+             | Revenue preservation through supplier qualification; highly variable |
+| **Total Risk Value**             | **€160k \- €1.35M+**      | Primarily option value and downside protection                       |
 
 #### Strategic Option Value
 
@@ -833,8 +822,8 @@ Organizations can develop a business case across multiple value dimensions. The 
 
 ## 7\. Example SCI integration in CSRD
 
-**Company**: FinTech SaaS provider "PaymentCo" (fictional)   
-**CSRD Requirement**: ESRS E1-6 \- Report Scope 3, Category 11 (Use of Sold Products) emissions **Challenge**: How to calculate emissions from customers using their payment processing API
+**Company**: FinTech SaaS provider "PaymentCo" (fictional)
+**CSRD Requirement**: ESRS E1-6 \- Report GHG emissions, including software-related Scope 3 emissions **Challenge**: How to calculate and report emissions from cloud-hosted software services, using conventional GHG accounting for compliance and SCI for granular, actionable insight
 
 ---
 
@@ -861,22 +850,22 @@ Organizations can develop a business case across multiple value dimensions. The 
 
 ```
 Component              | Energy (kWh) | Carbon Intensity | Emissions (gCO2e)
-                      | per 1k txn   | (gCO2e/kWh)     | per 1k txn
---------------------- |------------- |----------------- |------------------
-API Gateway           | 0.15         | 380 (eu-west-1) | 57
-Processing Service    | 0.85         | 380             | 323
-Database              | 0.45         | 380             | 171
-Message Queue         | 0.25         | 380             | 95
---------------------- |------------- |----------------- |------------------
-TOTAL                 | 1.70 kWh     |                 | 646 gCO2e
+                      | per 1k txn            | (gCO2e/kWh)   | per 1k txn        |
+                      | --------------------- | ------------- | ----------------- | ------------------ |
+                      | API Gateway           | 0.15          | 380 (eu-west-1)   | 57                 |
+                      | Processing Service    | 0.85          | 380               | 323                |
+                      | Database              | 0.45          | 380               | 171                |
+                      | Message Queue         | 0.25          | 380               | 95                 |
+                      | --------------------- | ------------- | ----------------- | ------------------ |
+                      | TOTAL                 | 1.70 kWh      |                   | 646 gCO2e          |
 
 O = 646 gCO2e per 1,000 transactions
 ```
 
 **Data sources**:
 
-- Energy: AWS CloudWatch metrics \+ [Cloud Carbon Footprint](https://www.cloudcarbonfootprint.org/) models  
-- Carbon intensity: [Electricity Maps](https://www.electricitymaps.com/) for eu-west-1 region (Ireland)
+- Energy: AWS CloudWatch metrics \+ [Cloud Carbon Footprint](https://www.cloudcarbonfootprint.org/) models
+- Carbon intensity: **Average location-based** grid emission factor for eu-west-1 (Ireland), sourced from [Electricity Maps](https://www.electricitymaps.com/) (380 gCO2e/kWh annual average). This is consistent with GHG Protocol Scope 2 location-based guidance. Note: this is a grid average figure, not a marginal emission factor.
 
 
 #### 7.2.2 Embodied Emissions (M)
@@ -919,21 +908,27 @@ SCI = 0.988 gCO2e per transaction
 
 ---
 
-### 7.3 Step 3: Aggregate to Corporate GHG Inventory
+### 7.3 Step 3: Integrate into Corporate GHG Inventory
 
 **Annual transaction volume**: 50 million transactions
 
-**Total annual emissions from this service**:
+**Total annual emissions from this service (location-based)**:
 
 ```
 50,000,000 transactions × 0.988 gCO2e/transaction = 49,400,000 gCO2e
 = 49.4 tonnes CO2e
 ```
 
-**Classification**: Scope 3, Category 11 (Use of Sold Products)
+**GHG Protocol Classification:**
 
-- Emissions occur in AWS infrastructure (not owned/controlled by PaymentCo)  
-- Result from customers using PaymentCo's sold service
+PaymentCo uses a financial control reporting boundary. The AWS infrastructure is provisioned and paid for by PaymentCo but not financially controlled by them. The appropriate Scope 3 category depends on the nature of the cloud arrangement:
+
+- **Scope 3, Category 1** (Purchased Goods and Services): if the emissions are attributed to PaymentCo's procurement of cloud services from AWS
+- **Scope 3, Category 11** (Use of Sold Products): if the emissions are attributed to PaymentCo's customers using the payment API
+
+*Note: The appropriate classification depends on the reporting boundary and the nature of the cloud arrangement. Organisations should consult their auditors. For this example, we classify as Category 1 — PaymentCo purchasing cloud compute from AWS.*
+
+**Market-based consideration**: SCI provides only the location-based figure above. If PaymentCo's AWS contract includes renewable energy commitments, or if AWS reports market-based emission factors for eu-west-1, a separate market-based figure should be calculated and reported alongside the location-based figure. For example, AWS's Customer Carbon Footprint Tool may report a lower market-based figure reflecting AWS's renewable energy procurement. Both figures are required for ESRS E1-6 Scope 2 reporting; for Scope 3, the location-based figure is typically used.
 
 ---
 
@@ -944,17 +939,20 @@ SCI = 0.988 gCO2e per transaction
 **Scope 3 Emissions by Category (excerpt)**:
 
 ```
-Category 11: Use of Sold Products
-Total emissions: 49.4 tCO2e
+Category 1: Purchased Goods and Services (cloud computing)
+Total emissions (location-based): 49.4 tCO2e
 
 Calculation methodology:
-We calculated emissions from customer usage of our payment processing API
-using the Software Carbon Intensity (SCI) methodology (ISO/IEC 21031:2024).
+Emissions from our cloud-hosted payment processing API were calculated
+using the GHG Protocol Corporate Value Chain (Scope 3) Standard. To achieve
+component-level granularity, we applied the Software Carbon Intensity (SCI)
+methodology (ISO/IEC 21031:2024) using average location-based grid carbon
+intensity (380 gCO2e/kWh, Electricity Maps, eu-west-1 annual average).
+
 The SCI score of 0.988 gCO2e per transaction includes:
 
 - Operational emissions: Based on energy consumption measured via AWS CloudWatch
-  metrics and modeled using Cloud Carbon Footprint methodology, with carbon
-  intensity data from Electricity Maps for the eu-west-1 region (380 gCO2e/kWh).
+  metrics and modeled using Cloud Carbon Footprint methodology.
 
 - Embodied emissions: Allocated hardware manufacturing emissions based on
   industry-standard lifecycle assessment data for comparable server hardware,
@@ -1010,36 +1008,40 @@ transaction volume grows.
 
 ### 7.6 What This Example Shows
 
-#### ✅ SCI Provides:
+#### GHG Protocol Accounting Provides:
 
-1. **Granular calculation method** for a specific software service  
-2. **Defensible methodology** with documented data sources  
-3. **Component-level insight** (can see database is optimization opportunity)  
-4. **Functional unit** that enables intensity-based targets  
-5. **Audit trail** from measurements → calculation → disclosure
+1. **Scope classification** and corporate-level emissions total
+2. **Market-based Scope 2 figure** (from AWS carbon reporting / contractual instruments)
+3. **CSRD-compliant reporting boundary** under financial control approach
+4. **ESRS E1-6 (para 44\)**: Documents calculation methodology as required
 
-#### ✅ Maps to CSRD Requirements:
+#### SCI Adds:
 
-1. **ESRS E1-6**: Provides Scope 3 Category 11 emissions total (49.4 tCO2e)  
-2. **ESRS E1-6 (para 44\)**: Documents calculation methodology as required  
-3. **ESRS E1-4**: Enables intensity-based target setting (0.988 → 0.690)  
-4. **ESRS E1-1**: Identifies specific decarbonization levers (database optimization, hardware upgrade)
+1. **Component-level granularity** — identifies which service is the optimisation target
+2. **Rate-based metric** enabling intensity targets independent of business growth
+3. **Documented methodology** with audit trail from telemetry to disclosure
+4. **Actionable engineering insight** that corporate totals cannot provide
+5. **ESRS E1-4**: Enables intensity-based target setting (0.988 → 0.690)
+6. **ESRS E1-1**: Identifies specific decarbonisation levers (database optimisation, hardware upgrade)
 
-#### ⚠️ Realistic Limitations:
+#### Realistic Limitations:
 
-1. **Data quality**: 35% based on models/estimates (embodied emissions)  
-2. **Uncertainty**: AWS doesn't provide exact workload-level energy data  
-3. **Assumptions**: Server hardware proxy, average utilization patterns  
-4. **Documentation burden**: Requires detailed methodology disclosure
+1. **Data quality**: 35% based on models/estimates (embodied emissions)
+2. **Uncertainty**: AWS doesn't provide exact workload-level energy data
+3. **Assumptions**: Server hardware proxy, average utilisation patterns
+4. **SCI alone is not sufficient for CSRD compliance**: Market-based Scope 2, scope classification, and reporting boundaries require conventional GHG accounting
+5. **Documentation burden**: Requires detailed methodology disclosure
 
-#### 🔍 Auditor Would Verify:
+#### Auditor Would Verify:
 
-- Source of energy consumption data (AWS CloudWatch exports)  
-- Carbon intensity data source (Electricity Maps API logs)  
-- Embodied emissions LCA source (Dell documentation)  
-- Transaction volume (billing system records)  
-- Calculation logic (spreadsheet or tool outputs)  
+- Source of energy consumption data (AWS CloudWatch exports)
+- **Confirmation that average location-based (not marginal) emission factors were used**
+- Carbon intensity data source (Electricity Maps API logs)
+- Embodied emissions LCA source (Dell documentation)
+- Transaction volume (billing system records)
+- Calculation logic (spreadsheet or tool outputs)
 - Year-over-year consistency (same methodology applied)
+- **Separate market-based calculation where applicable**
 
 ---
 
