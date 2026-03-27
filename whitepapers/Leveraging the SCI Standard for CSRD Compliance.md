@@ -16,13 +16,13 @@ For organizations that develop, deploy, or procure software, a critical challeng
 - **Accurately quantify** software carbon emissions at a granular level  
 - **Support CSRD compliance** efforts, particularly for ESRS E1-6 (GHG emissions reporting)  
 - **Drive measurable reductions** in software-related emissions  
-- **Demonstrate double materiality** by linking software impacts to business value  
+- **Demonstrate double materiality** by linking software impacts to business value
 - **Support science-based target** development and tracking
-
+ 
 **Key Recommendation**: Organizations subject to CSRD should consider adopting the SCI standard as a practical methodology for calculating, tracking, and reducing software carbon emissions within their broader GHG inventory and sustainability reporting framework.
-
+ 
 **Disclaimer**: The SCI standard is a *complementary tool* that can support CSRD compliance, not a requirement of ESRS E1. Organizations should consult with their auditors, legal advisors, and sustainability professionals to determine the most appropriate methodologies for their specific reporting context. While SCI provides valuable technical granularity, ESRS E1 does not explicitly mandate its use, and alternative approaches may also be valid.
-
+ 
 ---
 
 ## Table of Contents
@@ -33,9 +33,9 @@ For organizations that develop, deploy, or procure software, a critical challeng
 4. [Strategic Alignment: SCI and CSRD](#4-strategic-alignment-sci-and-csrd)  
 5. [Practical Implementation Framework](#5-practical-implementation-framework)  
 6. [Benefits and Business Case](#6-benefits-and-business-case)  
-7. [Conclusion and Recommendations](#7-conclusion-and-recommendations)  
+7. [Conclusion and Recommendations](#7-conclusion-and-recommendations)
 8. [Resources and References](#8-resources-and-references)
-
+ 
 ---
 
 ## 1\. Understanding CSRD and ESRS E1
@@ -472,7 +472,7 @@ The hardest case. The organisation estimates emissions in someone else's infrast
 - Understand whether suppliers are including emissions in their Scope 1/2 reporting  
 - Work with cloud providers to understand their reporting boundaries  
 - For Scope 3 Category 11, focus on emissions that occur beyond your organizational boundary  
-- Consult GHG Protocol Scope 3 guidance on attribution principles  
+- Consult GHG Protocol Scope 3 guidance on attribution principles
 - Engage auditors on appropriate value chain attribution methodologies
 
 ---
@@ -821,9 +821,12 @@ Organizations can develop a business case across multiple value dimensions. The 
 **Important**: These figures are indicative and based on industry estimates. Actual benefits will depend on numerous factors including current efficiency baseline, organizational size, workload characteristics, cloud vs. on-premise mix, and implementation quality. Organizations should conduct their own analysis based on their specific context.
 
 ## 7\. Example SCI integration in CSRD
-
+ 
 **Company**: FinTech SaaS provider "PaymentCo" (fictional)
-**CSRD Requirement**: ESRS E1-6 \- Report GHG emissions, including software-related Scope 3 emissions **Challenge**: How to calculate and report emissions from cloud-hosted software services, using conventional GHG accounting for compliance and SCI for granular, actionable insight
+ 
+**CSRD Requirement**: ESRS E1-6 \- Report GHG emissions, including software-related Scope 3 emissions 
+ 
+**Challenge**: How to calculate and report emissions from cloud-hosted software services, using conventional GHG accounting for compliance and SCI for granular, actionable insight
 
 ---
 
