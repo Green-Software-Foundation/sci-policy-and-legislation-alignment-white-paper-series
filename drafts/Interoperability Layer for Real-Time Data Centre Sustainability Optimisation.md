@@ -1,3 +1,4 @@
+
 # Bridging the Sustainability Gap: A Standardised Interoperability Layer for Real-Time Data Centre Sustainability Optimisation
 
 **Green Software Foundation — Hardware Standards Working Group**
@@ -19,11 +20,11 @@ The specification will establish a standardised mechanism through which data cen
 
 The data centre industry faces a fundamental and largely unaddressed contradiction: a facility can be highly energy-efficient by conventional measures and yet remain environmentally unsustainable. Power Usage Effectiveness (PUE) — the dominant metric for data centre energy performance — tells operators how efficiently they use the power they draw. It reveals nothing about what that power is, where it originates, or how intelligently their consumption responds to the state of the grid that supplies it.
 
-The proposed specification addresses this gap directly. It will define a standardised mechanism for data centres to receive real-time grid signals, understand the renewable and non-renewable composition of available power, and dynamically adjust workload consumption in response — enabling operators to make intelligent, real-time trade-offs between performance and sustainability.
+The regulatory environment transforms this gap from an operational blind spot into an urgent compliance liability. The EU's Energy Efficiency Directive (EED), now in mandatory annual reporting phase for all data centres above 500 kW, the Corporate Sustainability Reporting Directive (CSRD), and a forthcoming EU Data Centre Energy Efficiency Package collectively require precisely the kind of real-time, source-aware consumption data that this specification is designed to produce. Similar regulatory pressures are emerging in the United States and across the Asia-Pacific region, where projected power demand growth of 165% by 2030 is driving urgent policy responses.
 
 > **Core proposition:** Sustainability requires knowing not just how much power you consume, but what power you consume — and being able to act on that knowledge in real time.
 
-The regulatory environment makes this work urgent. The EU's Energy Efficiency Directive (EED), now in mandatory annual reporting phase for all data centres above 500 kW, the Corporate Sustainability Reporting Directive (CSRD), and a forthcoming EU Data Centre Energy Efficiency Package collectively require precisely the kind of real-time, source-aware consumption data that this specification is designed to produce. Similar regulatory pressures are emerging in the United States and across the Asia-Pacific region, where projected power demand growth of 165% by 2030 is driving urgent policy responses.
+The proposed specification addresses this challenge directly. It will define a standardised mechanism for data centres to receive real-time grid signals, understand the renewable and non-renewable composition of available power, and dynamically adjust workload consumption in response — enabling operators to make intelligent, real-time trade-offs between performance and sustainability.
 
 The specification will be developed openly within the GSF, as a standalone standard with WDPC as a normative reference. It is not a product, a monitoring tool, or a prescriptive operational policy. It is the common language that the data centre and the grid currently lack.
 
@@ -89,71 +90,40 @@ Operators cannot credibly report on renewable energy use without the ability to 
 
 **Regulatory reference:** Directive (EU) 2023/1791; Commission Delegated Regulation (EU) 2024/1364
 
----
-
 #### Corporate Sustainability Reporting Directive — Directive (EU) 2022/2464
 
-The CSRD, effective from 1 January 2024, requires large companies to publish detailed ESG disclosures aligned with the European Sustainability Reporting Standards (ESRS). The directive replaces the narrower Non-Financial Reporting Directive and dramatically expands scope — approximately **50,000 organisations** fall within its remit, including over 10,000 non-EU entities with significant European operations.
-
-The phased rollout is as follows:
-
-| Wave | Companies in Scope | Reporting From |
-|------|--------------------|----------------|
-| Wave 1 | Large listed companies (>500 employees) already under NFRD | FY2024 (reports in 2025) |
-| Wave 2 | Large companies not previously under NFRD (>250 employees and/or >€40M turnover) | FY2025 (reports in 2026) |
-| Wave 3 | Listed SMEs (opt-out until 2028) | FY2026 (reports in 2027) |
-| Wave 4 | Non-EU companies with significant EU operations | By 2028 |
+The CSRD requires large companies to publish detailed ESG disclosures aligned with the European Sustainability Reporting Standards (ESRS). Approximately **50,000 organisations** fall within its remit, including over 10,000 non-EU entities with significant European operations.
 
 For data centre operators and their enterprise tenants, the CSRD requires credible disclosure of Scope 2 emissions from purchased electricity and, increasingly, of Scope 3 emissions attributable to IT infrastructure. Without the ability to track real-time power source composition, CSRD disclosures on infrastructure carbon intensity are estimates at best. The proposed specification provides the data infrastructure that makes verifiable, granular CSRD compliance achievable.
 
-**Regulatory reference:** Directive (EU) 2022/2464; European Sustainability Reporting Standards (ESRS)
-
----
-
 #### EU Data Centre Sustainability Rating Scheme — Delegated Regulation (EU) 2024/1364
 
-Adopted in March 2024, this delegated regulation establishes the first phase of an EU-wide scheme to rate the sustainability of data centres. It defines the sustainability indicators, performance metrics, and measurement methodology that feed into the European database. The Commission is empowered to introduce a formal sustainability rating system once sufficient data has been collected — an assessment mandated for completion by May 2025.
-
-A sustainability rating creates direct commercial and reputational incentives for operators to actively manage their sustainability profile, not merely report it passively. The proposed specification is the operational mechanism through which favourable ratings can be achieved and maintained.
-
----
+Adopted in March 2024, this delegated regulation establishes the first phase of an EU-wide scheme to rate the sustainability of data centres. A sustainability rating creates direct commercial and reputational incentives for operators to actively manage their sustainability profile, not merely report it passively. The proposed specification is the operational mechanism through which favourable ratings can be achieved and maintained.
 
 #### European Green Deal, Fit for 55, and the Forthcoming Data Centre Package
 
-The European Green Deal — targeting net-zero emissions by 2050 and a 55% reduction by 2030 — provides the overarching policy architecture within which the EED and CSRD sit. A dedicated **Data Centre Energy Efficiency Package** is expected alongside the EU Strategy Roadmap on Digitalisation and AI in the first half of 2026, signalling continued and accelerating regulatory attention. Operators implementing the kind of real-time grid-responsive management this specification enables will be measurably better positioned when that package arrives.
-
----
+A dedicated **Data Centre Energy Efficiency Package** is expected alongside the EU Strategy Roadmap on Digitalisation and AI in the first half of 2026, signalling continued and accelerating regulatory attention. Operators implementing the kind of real-time grid-responsive management this specification enables will be measurably better positioned when that package arrives.
 
 ### 3.2 United States: Federal Recommendations and State-Level Action
 
-#### DOE Powering AI and Data Center Infrastructure Recommendations (2024)
+The US Department of Energy's 2024 recommendations explicitly identify three federal priorities that align directly with the proposed specification: improving efficiency in AI workloads; codifying **utility-operator flexibility contracts**; and accelerating clean generation and storage tailored for data centre load growth. The proposed specification provides the interoperability standard that makes utility-operator flexibility contracts technically realisable at scale.
 
-The US Department of Energy's 2024 recommendations explicitly identify three federal priorities that align directly with the proposed specification: improving efficiency in AI workloads; codifying **utility-operator flexibility contracts**; and accelerating clean generation and storage tailored for data centre load growth. The DOE's Lawrence Berkeley National Laboratory projected data centre electricity consumption rising from 176 TWh in 2023 to between 325 and 580 TWh by 2028 — a trajectory the federal government is actively seeking to manage through demand-side flexibility, not simply supply-side expansion. The proposed specification provides the interoperability standard that makes utility-operator flexibility contracts technically realisable at scale.
-
-#### EPRI DCFlex Initiative
-
-The Electric Power Research Institute's DCFlex project — involving more than 40 organisations including Google, Meta, Microsoft, Duke Energy, and the PJM Interconnection — is actively piloting demand-response, workload shifting, and UPS-as-grid-resource approaches. DCFlex demonstrates wide industry recognition that the problem is real and that solutions generate value. The proposed GSF specification would provide the open, vendor-neutral interoperability standard that commercial pilots such as DCFlex currently lack.
-
-#### State-Level Renewable and Clean Energy Frameworks
-
-As of mid-2024, 29 US states and the District of Columbia had adopted Renewable Portfolio Standards (RPS) or Clean Energy Standards (CES), with 16 states targeting at least 50% renewable retail electricity sales. Texas enacted Senate Bill 6 (SB6) in June 2025, introducing planning, interconnection, and emergency operations reforms for large data centre loads — reflecting a broader state-level shift from treating data centres as passive grid consumers to requiring them to operate as responsible grid participants.
+At the industry level, the Electric Power Research Institute's DCFlex project is actively piloting demand-response, workload shifting, and UPS-as-grid-resource approaches. The proposed GSF specification would provide the open, vendor-neutral interoperability standard that commercial pilots such as DCFlex currently lack.
 
 ### 3.3 Asia-Pacific: Urgency at Scale
 
-The Asia-Pacific region confronts the most acute version of the data centre sustainability challenge. Power demand is projected to grow from approximately 320 TWh in 2024 to 780 TWh by 2030 — a **165% increase** — driven by rapid AI infrastructure buildout across Australia, Japan, Singapore, India, South Korea, and Southeast Asia.
-
-Singapore lifted its earlier moratorium on new data centre construction with strict sustainability conditions applied as a prerequisite for approval. Japan has announced plans to co-locate data infrastructure with offshore wind and nuclear sites, embedding grid-proximity sustainability into national infrastructure planning. These precedents signal a clear regional direction of travel toward sustainability-conditional data centre development — one that a standardised interoperability specification can directly underpin.
+Power demand in the APAC region is projected to grow from approximately 320 TWh in 2024 to 780 TWh by 2030 — a **165% increase**. Singapore’s strict sustainability conditions for new data centre builds and Japan’s focus on co-locating infrastructure with clean energy signal a clear regional direction of travel toward sustainability-conditional data centre development.
 
 ### 3.4 The Compliance Landscape at a Glance
 
 | Framework | Geography | Relevance to Specification |
 |-----------|-----------|---------------------------|
-| EED (EU) 2023/1791 + Reg 2024/1364 | EU (500 kW+ DCs) | Mandatory annual reporting on renewable use, PUE, and sustainability KPIs. Precursor to minimum performance standards. Real-time data infrastructure is required to comply credibly. |
-| CSRD (EU) 2022/2464 | EU + global (~50,000 orgs) | Requires verifiable ESG disclosure including Scope 2 and Scope 3 infrastructure emissions. Source-level power tracking is essential for accurate compliance. |
-| Delegated Regulation 2024/1364 | EU | Establishes EU sustainability rating scheme. Active sustainability management — not passive reporting — will determine outcomes. |
-| DOE DC Infrastructure Recommendations (2024) | USA | Federal call for codified utility-operator flexibility contracts. The specification provides the open standard to make this technically interoperable at scale. |
-| EPRI DCFlex | USA (industry) | Industry-led pilots demonstrating demand-response value. The specification provides the missing open-standard interoperability layer. |
-| Singapore DC Sustainability Conditions | APAC | Sustainability-conditional approvals for new builds. Grid-responsive operation is becoming a market access requirement across the region. |
+| EED (EU) 2023/1791 | EU (500 kW+ DCs) | Mandatory annual reporting on renewable use. Real-time data infrastructure is required to comply credibly. |
+| CSRD (EU) 2022/2464 | EU + global | Requires verifiable ESG disclosure including Scope 2 and Scope 3 infrastructure emissions. |
+| Delegated Regulation 2024/1364 | EU | Establishes EU sustainability rating scheme. Active sustainability management will determine outcomes. |
+| DOE Recommendations (2024) | USA | Federal call for codified utility-operator flexibility contracts. |
+| EPRI DCFlex | USA (industry) | Industry-led pilots demonstrating demand-response value. The specification provides the missing open-standard layer. |
+| Singapore DC Conditions | APAC | Sustainability-conditional approvals for new builds. Grid-responsive operation is becoming a market access requirement. |
 
 ---
 
@@ -161,67 +131,92 @@ Singapore lifted its earlier moratorium on new data centre construction with str
 
 ### 4.1 Objective
 
-The specification defines an open, vendor-neutral interoperability layer that enables any data centre — regardless of vendor, operator, or geography — to receive, interpret, and respond to real-time grid sustainability signals. It is not a product, a proprietary API, or a monitoring tool. It is a standard: a common language and framework that allows the data centre and the grid to communicate, and that empowers operators to act on that communication with intelligence and verifiability.
+The specification defines an open, vendor-neutral interoperability layer that enables any data centre — regardless of vendor, operator, or geography — to receive, interpret, and respond to real-time grid sustainability signals. It is a standard: a common language and framework that allows the data centre and the grid to communicate, and that empowers operators to act on that communication with intelligence and verifiability.
 
 ### 4.2 Core Technical Requirements
 
-The specification addresses the interface between the data centre and the external power grid across five functional areas:
+The specification addresses the interface between the data centre and the external power grid across six functional areas:
 
-- **Grid signal ingestion:** The data centre receives real-time signals from grid operators regarding available capacity, renewable composition, carbon intensity, and demand constraints.
-- **Power source awareness:** The data centre tracks the composition of the power it is drawing — renewable versus fossil — and maintains this as a live operational parameter.
-- **Dynamic consumption control:** Operators configure a sustainability-versus-performance parameter and the system translates that parameter into workload-level consumption decisions in real time.
-- **Peak demand avoidance:** The system supports logic to prevent drawing beyond grid capacity thresholds, avoiding demand spikes that trigger higher-emission backup generation or destabilise grid supply.
-- **ESG data output:** The specification supports generation of real-time, source-level consumption data in the formats required for EED, CSRD, and equivalent compliance reporting.
+- **Grid signal ingestion:** The data centre receives real-time signals regarding available capacity, renewable composition, and carbon intensity.
+- **Power source awareness:** The data centre tracks the composition of the power it is drawing and maintains this as a live parameter.
+- **Dynamic consumption control:** Operators configure a sustainability-versus-performance parameter that translates into workload-level consumption decisions.
+- **Peak demand avoidance:** The system prevents drawing beyond grid capacity thresholds, avoiding demand spikes that trigger higher-emission backup generation.
+- **ESG data output:** The specification supports generation of real-time, source-level consumption data in formats required for compliance reporting.
+- **Secure data transport:** The specification defines protocol-agnostic, secure, and low-latency transport mechanisms (e.g., MQTT, secure RESTful APIs) ensuring that the two-way grid interface cannot become an attack vector for unauthorized facility control.
 
 ### 4.3 The Sustainability–Performance Scale
 
-A core architectural concept is a configurable, dynamic parameter representing the operator's chosen position on a spectrum between maximum performance and maximum sustainability. This is not a binary setting — it is a continuously adjustable scale that can be:
-
-- Set manually by operators at any time
-- Configured to follow time-of-day or calendar-driven profiles
-- Triggered automatically by grid events — such as stress alerts or renewable generation peaks
-- Governed by pre-defined policy rules, including minimum sustainability floors
-
-> **Example:** A data centre might run at a performance-optimised setting during business hours, transition to sustainability optimisation during off-peak periods, and automatically reduce non-renewable consumption during grid events — all without manual intervention, driven entirely by the standardised signals the specification defines.
+A core architectural concept is a configurable, dynamic parameter representing the operator's chosen position on a spectrum between maximum performance and maximum sustainability. It is a continuously adjustable scale that can be set manually, configured to follow time-of-day profiles, triggered automatically by grid events, or governed by pre-defined policy rules.
 
 ### 4.4 Scope Boundaries and Relationship to WDPC
 
-The specification operates at the layer above the facility interior. WDPC defines the data models and signalling framework within the facility — at the level of racks, nodes, and components. The proposed specification defines the external interface: how grid-side signals enter the facility and how facility-side responses are structured and communicated outward. WDPC is used as a normative reference for internal data models; the two specifications are complementary but distinct.
-
-| GSF Specification / Project | Relationship to Proposed Specification |
-|-----------------------------|----------------------------------------|
-| WDPC (Workload Dynamic Power & Cooling) | Normative reference for facility-side data models. The proposed specification extends the external interface beyond the facility boundary. |
-| Software Carbon Intensity (SCI) | SCI measures software carbon footprint. The proposed specification provides real-time power source data that increases the accuracy of SCI calculations. |
-| SCI for Open Telemetry | Open telemetry pipelines may carry the grid signal and sustainability data that the proposed specification generates. |
-| Software Energy Efficiency | Software-level optimisation benefits directly from knowing the real-time carbon intensity of the power being consumed — a primary output of this specification. |
+The specification operates at the layer above the facility interior. WDPC defines the data models and signalling framework within the facility. The proposed specification defines the external interface. WDPC is used as a normative reference for internal data models; the two specifications are complementary but distinct.
 
 ### 4.5 What the Specification Is Not
 
-- It is not a proprietary data centre management system or vendor product
-- It is not a replacement for PUE measurement or existing energy efficiency frameworks
-- It is not a prescriptive operational policy — it defines the interface, not the decisions made through it
-- It does not replicate the internal facility-level coverage of WDPC
-- It is not a compliance tool in itself — it provides the data infrastructure that compliance tools require
+- It is not a proprietary data centre management system or vendor product.
+- It is not a replacement for PUE measurement or existing energy efficiency frameworks.
+- It is not a prescriptive operational policy — it defines the interface, not the decisions.
+- It does not replicate the internal facility-level coverage of WDPC.
+- **It is not a loophole for greenwashing — it provides verifiable, immutable data telemetry to prevent the manipulation of sustainability metrics, rather than enabling it.**
+
+### 4.6 Conceptual Data Model Schemas
+
+To ensure vendor-neutrality and broad interoperability, the specification defines a lightweight, protocol-agnostic data model built around three core functional schemas.
+
+#### Schema A: Inbound Grid Telemetry (Grid to Data Centre)
+Standardizes the signals the facility receives from the local grid operator or utility market aggregator.
+
+| Field Name | Data Type | Unit | Description |
+| :--- | :--- | :--- | :--- |
+| `timestamp` | `ISO 8601` | Date/Time | The exact time the grid signal was generated. |
+| `grid_node_id` | `String` | None | Unique identifier for the local substation or grid interconnection point. |
+| `carbon_intensity` | `Float` | gCO₂eq/kWh | Real-time marginal carbon emissions of the local grid. |
+| `renewable_ratio` | `Float` | Percentage | The current proportion of grid power generated by renewable sources. |
+| `grid_status` | `Enum` | [NORMAL, PEAK, STRESS, EMERGENCY] | Current operational state of the grid. |
+| `capacity_limit` | `Integer` | kW | *Optional.* Maximum power draw permitted during a STRESS event. |
+| `forecast_window` | `Array` | Minutes | *Optional.* Projected carbon intensity/grid status for the next 15/30/60 mins. |
+
+#### Schema B: Outbound Facility Intent & Telemetry (Data Centre to Grid/Auditor)
+Transmits the facility’s current consumption profile and its intended future draw back to the grid operator, and serves as the foundational record for EED/CSRD reporting.
+
+| Field Name | Data Type | Unit | Description |
+| :--- | :--- | :--- | :--- |
+| `facility_id` | `String` | None | GSF-compliant unique identifier for the data centre facility. |
+| `current_draw` | `Integer` | kW | Total instantaneous facility power consumption from the grid. |
+| `renewable_draw` | `Integer` | kW | Calculated renewable consumption. |
+| `flexibility_margin` | `Integer` | kW | Power the facility can shed/shift within 5 minutes without dropping critical workloads. |
+| `projected_draw_1h` | `Integer` | kW | Estimated power requirement for the next hour. |
+| `active_response` | `Boolean` | True/False | Flags whether the facility is actively suppressing demand in response to a grid STRESS signal. |
+
+#### Schema C: The Sustainability-Performance (S-P) Operational State
+Translates the conceptual scale into a machine-readable state for internal facility orchestrators.
+
+| Field Name | Data Type | Unit | Description |
+| :--- | :--- | :--- | :--- |
+| `sp_index` | `Integer` | Scale (1-10) | 1 = Max Performance; 10 = Max Sustainability. |
+| `policy_trigger` | `Enum` | [MANUAL, SCHEDULED, GRID_EVENT, CARBON_THRESHOLD] | Indicates why the current `sp_index` is active. |
+| `max_carbon_ceiling`| `Float` | gCO₂eq/kWh | Hard policy limit forcing highly sustainable modes if exceeded. |
+
+### 4.7 Integration with WDPC Data Models
+
+The data models defined above intentionally stop at the facility's edge. Once the `sp_index` and grid `carbon_intensity` are ingested, they are passed to the facility's internal management systems. From there, the GSF **Workload Dynamic Power and Cooling (WDPC)** specification takes over. WDPC utilizes these external data points to execute the required hardware-level commands, ensuring a seamless chain of custody from the macroscopic grid signal down to the microscopic CPU instruction.
 
 ---
 
 ## 5. Illustrative Use Cases
 
 ### 5.1 Time-of-Day Optimisation
-
-A data centre operator configures a sustainability profile that shifts toward maximum renewable utilisation between midnight and 6:00 AM, when grid demand is low and a high proportion of renewable generation is dispatched. During this window, the system prioritises flexible workloads — batch analytics, model training, backup operations — to absorb renewable generation that would otherwise be curtailed. As the morning demand peak approaches, the system automatically transitions to a performance-priority profile, ensuring latency-sensitive workloads remain unaffected. The sustainability data generated throughout is captured in the format required for EED and CSRD reporting.
+The system prioritises flexible workloads between midnight and 6:00 AM to absorb renewable generation that would otherwise be curtailed. As the morning demand peak approaches, it automatically transitions to a performance-priority profile.
 
 ### 5.2 Grid Stress Event Response
-
-During a peak demand period, the regional grid operator signals a demand constraint event. The data centre's interoperability layer receives the signal and applies a pre-configured demand reduction profile: non-critical workloads are queued, cooling is optimised, and power draw is reduced by a defined percentage for the duration of the event. The grid operator receives confirmation of the load reduction. The event is logged as a verified sustainability action in the facility's compliance reporting dataset.
+During a peak demand period, the grid operator signals a demand constraint event. The data centre applies a pre-configured demand reduction profile. The event is logged as a verified sustainability action in the facility's compliance reporting dataset.
 
 ### 5.3 Power Source Selection on a Mixed-Source Grid
-
-A data centre is served by a grid that mixes renewable, nuclear, and gas-fired generation, with composition varying hour by hour. The operator has a corporate target of drawing at least 80% of power from zero-carbon sources on a rolling hourly basis. The interoperability layer monitors real-time grid composition against this threshold, dynamically adjusting workload intensity — drawing harder during high-renewable periods and throttling back when gas generation dominates. The system generates verified hourly renewable attribution data for Scope 2 disclosure.
+The operator targets drawing at least 80% of power from zero-carbon sources. The interoperability layer dynamically adjusts workload intensity to hit this target based on live grid mixes.
 
 ### 5.4 On-Site Renewable Integration
-
-A data centre with an on-site solar array wishes to maximise the proportion of workloads served by its own generation. The specification allows the operator to configure a preference for on-site renewable consumption, automatically scheduling flexible workloads to coincide with peak generation windows and reducing grid draw during those periods. The combination of on-site generation tracking and grid-signal awareness enables a holistic, real-time view of the facility's carbon profile.
+The operator configures a preference for on-site renewable consumption, automatically scheduling flexible workloads to coincide with peak generation windows and reducing grid draw.
 
 ---
 
@@ -230,11 +225,11 @@ A data centre with an on-site solar array wishes to maximise the proportion of w
 | Stakeholder | Value Delivered |
 |-------------|----------------|
 | **Data Centre Operators** | Real-time control over the sustainability-performance trade-off; verifiable compliance data for EED and CSRD reporting; improved sustainability ratings; reduced exposure to forthcoming minimum performance standards. |
-| **Grid Operators** | Data centres become predictable, programmable demand participants. Demand-response capability supports grid stability during stress events and absorbs excess renewable generation. |
-| **Regulators and Policymakers** | Open, standardised reporting infrastructure makes EED and CSRD enforcement tractable. A common data model enables consistent cross-border sustainability monitoring and application of forthcoming rating schemes. |
-| **Cloud and Colocation Providers** | Differentiation on verifiable sustainability credentials; ability to offer tenants guaranteed sustainability SLAs backed by real-time data; stronger positioning under SEC ESG disclosure requirements. |
-| **Enterprise Tenants** | Granular, verified Scope 3 emissions data for hosted infrastructure; ability to verify the sustainability credentials of their provider; measurable support for internal net-zero commitments. |
-| **Hardware and Software Vendors** | A common interface standard reduces fragmentation and integration cost. Vendors building to the specification gain interoperability across the GSF ecosystem and with compliant grid operators globally. |
+| **Grid Operators** | Data centres become predictable, programmable demand participants. **The specification provides grid operators with standardised, predictable demand elasticity without requiring them to build bespoke API integrations for every single hyperscaler or colocation vendor.** Demand-response capability supports grid stability during stress events and absorbs excess renewable generation. |
+| **Regulators and Policymakers** | Open, standardised reporting infrastructure makes EED and CSRD enforcement tractable. A common data model enables consistent cross-border sustainability monitoring. |
+| **Cloud and Colocation Providers** | Differentiation on verifiable sustainability credentials; ability to offer tenants guaranteed SLAs backed by real-time data. |
+| **Enterprise Tenants** | Granular, verified Scope 3 emissions data for hosted infrastructure; measurable support for internal net-zero commitments. |
+| **Hardware and Software Vendors** | A common interface standard reduces fragmentation and integration cost. Vendors building to the specification gain interoperability across the GSF ecosystem. |
 
 ---
 
@@ -242,15 +237,11 @@ A data centre with an on-site solar array wishes to maximise the proportion of w
 
 ### 7.1 Green Software Foundation Framework
 
-The specification will be developed within the Green Software Foundation, a non-profit organisation operating under the Linux Foundation. The GSF brings together technology companies, academic institutions, and practitioners to create open standards for sustainable digital infrastructure through a collaborative, consensus-driven process.
-
-The Hardware Standards Working Group, established following the merger of the Sustainable and Scalable Infrastructure Alliance (SSIA) with the GSF in late 2024, provides the governance structure for this specification's development. The Working Group operates under the GSF's seven-stage specification lifecycle, ensuring quality, stakeholder consensus, and real-world validation before any specification reaches public release.
+The specification will be developed within the Green Software Foundation, a non-profit organisation operating under the Linux Foundation. The Hardware Standards Working Group, formally established following the integration of the Sustainable and Scalable Infrastructure Alliance (SSIA) principles into the GSF, provides the governance structure for this specification's development. The Working Group operates under the GSF's standard lifecycle, ensuring quality, stakeholder consensus, and real-world validation.
 
 ### 7.2 Open Standard Development
 
-The specification will be developed as an open standard, accessible to all GSF members and to organisations that join specifically to contribute to this project. The development process is designed to be inclusive across the full ecosystem: data centre operators, grid operators, hardware and software vendors, and academic research institutions. Academic participation carries no cost within the GSF framework.
-
-The specification will be developed with awareness of, and compatibility with, relevant existing standards, including EN 50600-4-2 (PUE definition), ISO 50001 (energy management systems), and IEEE Power and Energy Society grid standards. Where appropriate, the specification will seek alignment with ISO processes, consistent with the GSF's approach to its Software Energy Efficiency specification.
+The specification will be developed as an open standard, accessible to all GSF members and to organisations that join specifically to contribute to this project. The development process is designed to be inclusive across the full ecosystem: data centre operators, grid operators, hardware and software vendors, and academic research institutions.
 
 ---
 
@@ -258,11 +249,9 @@ The specification will be developed with awareness of, and compatibility with, r
 
 Three converging forces make the development of this specification both timely and urgent.
 
-The first is **regulatory acceleration**. The EU's EED reporting requirements are already active. CSRD obligations are rolling out in annual waves, and a further Data Centre Energy Efficiency Package is expected within the first half of 2026. Operators who establish the real-time grid-interface infrastructure that meaningful sustainability reporting requires will be measurably better positioned than those who defer to the point at which minimum performance standards are imposed.
-
-The second is the **infrastructure inflection point**. Global data centre power demand is projected to roughly double between 2023 and 2028, driven primarily by AI workloads. The window for establishing the interoperability standards that will govern the next generation of data centre infrastructure is narrow. Standards embedded in infrastructure from the outset are adopted immediately; those developed after the build is complete face years of retrofit.
-
-The third is the **absence of an open standard**. Industry pilots — including EPRI's DCFlex and various hyperscaler programmes — have demonstrated that grid-responsive data centre operation is technically feasible and economically valuable. They have not, however, produced a vendor-neutral, openly governed standard that any operator can implement. The GSF, building on its proven track record with SCI and WDPC, is positioned to fill that gap.
+1. **Regulatory acceleration:** The EU's EED reporting requirements are already active. CSRD obligations are rolling out in annual waves, and a further Data Centre Energy Efficiency Package is expected within the first half of 2026.
+2. **Infrastructure inflection point:** Global data centre power demand is projected to roughly double between 2023 and 2028, driven primarily by AI workloads.
+3. **Absence of an open standard:** Industry pilots have demonstrated that grid-responsive operation is feasible and valuable, but have not produced a vendor-neutral standard. 
 
 > **The market has demonstrated that grid-responsive sustainability optimisation is possible. The regulatory environment is increasingly mandating it. What is missing is the open standard that makes it universal. That is what this specification will provide.**
 
@@ -280,24 +269,18 @@ The time to develop this standard is before the next generation of infrastructur
 
 ## References and Regulatory Citations
 
-- **EU EED:** Directive (EU) 2023/1791 of the European Parliament and of the Council on Energy Efficiency (recast), Articles 12, 25, 26, 33, and Annex VII
-- **EU EED Delegated Act:** Commission Delegated Regulation (EU) 2024/1364 of 14 March 2024 — first phase of the establishment of a common Union rating scheme for data centres
+- **EU EED:** Directive (EU) 2023/1791 of the European Parliament and of the Council on Energy Efficiency (recast)
+- **EU EED Delegated Act:** Commission Delegated Regulation (EU) 2024/1364 of 14 March 2024
 - **CSRD:** Directive (EU) 2022/2464 of the European Parliament and of the Council of 14 December 2022
-- **ESRS:** European Sustainability Reporting Standards, developed by EFRAG and formally adopted by the European Commission, July 2023
-- **European Green Deal:** Communication COM/2019/640 final — The European Green Deal
-- **EU Digitalisation Action Plan:** Action Plan for the Digitalisation of the Energy Sector, European Commission, October 2022
-- **DOE (2024):** Powering AI and Data Center Infrastructure Recommendations, US Department of Energy, 2024
-- **LBNL (2024):** Data Centre Energy Consumption Assessment, Lawrence Berkeley National Laboratory, 2024
-- **EPRI DCFlex:** Electric Power Research Institute, DCFlex Project — epri.com
-- **Texas SB6:** Texas Senate Bill 6 (SB6), enacted June 2025 — grid planning, interconnection, and emergency operations reforms for large data centre loads
-- **Turner and Townsend (2025):** Data Center Construction Cost Index 2025 — APAC power demand projections
+- **ESRS:** European Sustainability Reporting Standards, developed by EFRAG, July 2023
+- **European Green Deal:** Communication COM/2019/640 final
+- **EU Digitalisation Action Plan:** Action Plan for the Digitalisation of the Energy Sector
+- **DOE (2024):** Powering AI and Data Center Infrastructure Recommendations
+- **LBNL (2024):** Data Centre Energy Consumption Assessment
+- **EPRI DCFlex:** Electric Power Research Institute, DCFlex Project
+- **Texas SB6:** Texas Senate Bill 6 (SB6), enacted June 2025
+- **Turner and Townsend (2025):** Data Center Construction Cost Index 2025
 - **EN 50600-4-2:** Information technology — Data centre facilities and infrastructures — Part 4-2: Power usage effectiveness
 - **ISO 50001:** Energy management systems — Requirements with guidance for use
-- **GSF WDPC:** Workload Dynamic Power and Cooling specification, Green Software Foundation Hardware Standards Working Group — greensoftware.foundation
-- **GSF SCI:** Software Carbon Intensity specification v1.0, Green Software Foundation, December 2022
-
----
-
-*This white paper is a publication of the GSF Hardware Standards Working Group. The views and proposals it contains are subject to revision through the GSF's open specification development process.*
-
-*© 2026 Green Software Foundation. Licensed under Creative Commons Attribution 4.0 International (CC BY 4.0).*
+- **GSF WDPC:** Workload Dynamic Power and Cooling specification
+- **GSF SCI:** Software Carbon Intensity specification v1.0
