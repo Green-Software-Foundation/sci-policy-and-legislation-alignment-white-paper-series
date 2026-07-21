@@ -2,7 +2,7 @@
 # Bridging the Sustainability Gap: A Standardised Interoperability Layer for Real-Time Data Centre Sustainability Optimisation
 
 **Green Software Foundation — Hardware Standards Working Group**
-*White Paper | June 2026*
+*White Paper | July 2026*
 
 *greensoftware.foundation*
 
