@@ -1,6 +1,6 @@
 > This white paper is currently in Draft and has NOT been approved
 
-# Bridging the Sustainability Gap: A Standardized Interoperability Layer for Real-Time Data Centre Sustainability Optimisation
+# [Draft] Bridging the Sustainability Gap: A Standardized Interoperability Layer for Real-Time Data Centre Sustainability Optimisation
 
 **Green Software Foundation — Hardware Standards Working Group**
 *White Paper | July 2026*
