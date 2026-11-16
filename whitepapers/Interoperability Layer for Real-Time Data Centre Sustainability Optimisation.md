@@ -1,6 +1,6 @@
 > This white paper is currently in Draft and has NOT been approved
 
-# [Draft] Bridging the Sustainability Gap: A Standardised Interoperability Layer for Optimisation (SILO)
+# [Draft] Bridging the Sustainability Gap: Sustainability Interoperability Layer for Optimisation (SILO)
 
 **Green Software Foundation — Hardware Standards Working Group**
 *White Paper | July 2026*
